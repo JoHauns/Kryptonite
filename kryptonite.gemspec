@@ -105,20 +105,20 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<kryptonite>, [">= 0"])
+#      s.add_runtime_dependency(%q<kryptonite>, [">= 0"])
       s.add_runtime_dependency(%q<will_paginate>, ["= 3.0.0"])
       s.add_runtime_dependency(%q<authlogic>, ["= 3.0.3"])
       s.add_runtime_dependency(%q<best_in_place>, ["= 1.0.6"])
       s.add_runtime_dependency(%q<paperclip>, ["= 2.7.0"])
     else
-      s.add_dependency(%q<kryptonite>, [">= 0"])
+#      s.add_dependency(%q<kryptonite>, [">= 0"])
       s.add_dependency(%q<will_paginate>, ["= 3.0.0"])
       s.add_dependency(%q<authlogic>, ["= 3.0.3"])
       s.add_dependency(%q<best_in_place>, ["= 1.0.6"])
       s.add_dependency(%q<paperclip>, ["= 2.7.0"])
     end
   else
-    s.add_dependency(%q<kryptonite>, [">= 0"])
+#    s.add_dependency(%q<kryptonite>, [">= 0"])
     s.add_dependency(%q<will_paginate>, ["= 3.0.0"])
     s.add_dependency(%q<authlogic>, ["= 3.0.3"])
     s.add_dependency(%q<best_in_place>, ["= 1.0.6"])
