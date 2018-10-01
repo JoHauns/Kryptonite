@@ -48,6 +48,10 @@ module Kryptonite
     def check_time_zone
       self.time_zone = Rails.configuration.time_zone unless self.time_zone
     end
+
+    def is_user?
+      access_level == $KRYPTONITE_USER_ACCESS_LEVEL_USER
+    end
 	
   	def is_admin?
   	  access_level == $KRYPTONITE_USER_ACCESS_LEVEL_ADMIN
